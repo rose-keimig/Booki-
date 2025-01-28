@@ -18,19 +18,49 @@ body {
     justify-content: center;
 }
 
-.tabs{
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;    
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 68px; 
+    text-decoration:none
+}
+
+.navbar {
     display: flex;
     justify-content: flex-end;
     gap: 68px; 
 }
 
-.accom:hover{
-    color: #0065FC;
+.navbar a{
+    text-decoration: none;
+    color: #000;
+    position: relative;
 }
 
-.things:hover{
-    color: #0065FC;
+.navbar a::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left:0;
+    width: 0%;
+    height: 2px;
+    background: #0065FC;
 }
+
+.navbar a:hover::before {
+    width:100%;
+}
+
+  .navbar a:hover {
+    color: #0065FC;
+  }
+  
 
 .logo{
     padding:30px 50px 30px 50px;
