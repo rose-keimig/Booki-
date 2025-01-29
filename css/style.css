@@ -18,12 +18,16 @@ body {
     justify-content: center;
 }
 
+h1 {
+    font-size: 22px;
+    margin: 0;
+}
 .header{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;    
-    padding: 40px 100px;
+    padding: 0px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,7 +50,7 @@ body {
 .navbar a::before {
     content: "";
     position: absolute;
-    top: 100%;
+    top: -50%;
     left:0;
     width: 0%;
     height: 2px;
@@ -63,7 +67,7 @@ body {
   
 
 .logo{
-    padding:30px 50px 30px 50px;
+    padding: 0px 0px 60px 0px;
 }
 .main-container {
     width: 100%;
