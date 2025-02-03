@@ -76,26 +76,25 @@ h1 {
   .nav-link:hover {
     color: #0065FC;
   }
-  
+  .main-title {
+    font-size: 22px;
+  }
   .search-bar {
     display: flex;
     align-items: center;
-    width: 338px;
     height: 49px;
+    width: 338px;
     border: 1px solid #F2F2F2;
     border-radius: 15px;
     overflow:hidden;
-    margin: 0px 0px 0px 0px;
+    margin: 0px 0px 38px 0px;
   }
-.location-icon{
 
-
-}
   .search-button {
     background-color: #0065FC;
     color: white;
     border:none;
-    padding: 0px 15px;
+    padding: 14px 16px;
     cursor: pointer;
     height:100%;
     font-size: 18px;
@@ -106,13 +105,48 @@ h1 {
     flex: 1;
     border: none;
     outline: none;
-    padding: 24px;
     font-size:18px;
     font-weight: bold;
     color: black;
     text-align: center;
   }
 
+  .location-icon {
+    background-color: #f2f2f2;
+    height: 100%;
+  }
+
+  .fa-location-dot {
+    color:#000;
+    padding: 15px 18px 16px 18px;
+  }
+
+.filter-container {
+    display: flex;
+    gap: 10px;
+    margin: 0px 0px 35px 0px;
+}
+.filter-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+.filter-chip {
+    display:flex;
+    align-items: center;
+    gap: 8px;
+    padding:14px 19px;
+    border:2px solid #D9D9D9;
+    background-color:white;
+    color: black;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.filter-chip:hover {
+    background-color: #DEEBFF;
+}
 .main-container {
     width: 100%;
     padding: 0 50px;
