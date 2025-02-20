@@ -17,6 +17,7 @@ body {
     display: flex;
     justify-content: center;
     max-width: 1440px;
+    margin: 0 auto;
 }
 
 h1 {
@@ -65,7 +66,7 @@ h1 {
 .nav-link::before {
     content: "";
     position: absolute;
-    top: -100%;
+    top: -80%;
     left:0;
     width: 0%;
     height: 2px;
@@ -76,48 +77,58 @@ h1 {
     width:100%;
 }
 
-  .nav-link:hover {
+.nav-link:hover {
     color: var(--main-color);
   }
 
-  .main-title {
+.main-title {
     font-size: 22px;
   }
 
-  .search-bar {
+.search-bar {
     display: flex;
     align-items: center;
     height: 49px;
     width: 338px;
     border: 1px solid #F2F2F2;
     border-radius: 15px;
-    overflow:hidden;
-    margin: 35px 0px 35px 0px;
+    overflow: hidden;
+    margin: 35px 0px;
   }
 
-  .search-button {
+.search-button {
     display:flex;
     align-items:center;
     justify-content: center;
-    gap: 8px;
     background-color: var(--main-color);
     color: white;
     border:none;
-    padding: 14px 14px;
     cursor: pointer;
-    height:100%;
+    min-height:100%;
+    flex-shrink: 0;
+    width: 93px;
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
-  }
+}
 
-  .search-icon {
+.search-icon {
     display: none;
     font-size: 18px;
-  }
-  
-  .search-input {
-    flex: 1;
+}
+ 
+.search-form {
+    display:flex;
+    align-items:center;
+    flex-grow: 1;
+    min-width: 0;
+    flex-grow:1;
+    height:100%;
+}  
+
+.search-input {
+    flex-grow: 1;
+    min-width: 0;
     border: none;
     outline: none;
     font-size:18px;
@@ -125,13 +136,19 @@ h1 {
     color: black;
     text-align: center;
   }
+
+.search-text{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
   
-  .location-icon {
-    background-color: var(--main-bg-colorcolor);
+.location-icon {
+    background-color: var(--main-bg-color);
     height: 100%;
   }
 
-  .fa-location-dot {
+.fa-location-dot {
     color:#000;
     padding: 15px 18px 16px 18px;
   }
@@ -242,17 +259,17 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 15px;
 }
 
-.accommondation-title {
+.accommodation-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .accommodation-cards .card {
-    width: 243px;
+    width: 30%;
+    margin-top: 30px;
 }
 
 .accommodation-cards img {

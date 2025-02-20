@@ -20,7 +20,7 @@
             <nav class="navbar">
                 <img src="images/logo/Booki.png" alt="Booki logo" width="61" height="18" class="logo">
                 <div class="nav-links">
-                    <a href="#" class="nav-link">Accomodations</a>
+                    <a href="#" class="nav-link">Accommodations</a>
                     <a href="#" class="nav-link">Things to Do</a>
                 </div>
             </nav>
@@ -32,11 +32,13 @@
                 <div class="location-icon">
                 <i class="fa-solid fa-location-dot"></i>
                 </div>
-                <input type="search" placeholder="Marseille, France" class="search-input">
-                <button class="search-button">
-                    <span class="search-text">Search</span>
-                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
-                </button>
+                <form action="#" method="get" class="search-form">
+                    <label for="search" class="sr-only">Search for a location</label>
+                    <input type="search" id="search" name="search" placeholder="Marseille, France" class="search-input">
+                    <button type="submit" class="search-button">
+                        <span class="search-text">Search</span>
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    </button>
             </div>
             <div class="filter-container">
                 <p class="filter-title">Filters</p>
@@ -62,7 +64,7 @@
             <div class="accommodation-and-popular">
                 <section class="accommodation">
                     <div class="accomodation-title">
-                        <h2 class="section-title">Marseille Accomodations</h2>
+                        <h2 class="section-title">Marseille Accommodations</h2>
                     </div>
                     <div class="accommodation-cards">
                         <article class="card">
