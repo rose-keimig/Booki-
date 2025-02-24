@@ -15,9 +15,12 @@
 
 body {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
     max-width: 1440px;
     margin: 0 auto;
+    width: 100%;
 }
 
 h1 {
@@ -269,6 +272,7 @@ h1 {
     gap: 30px;
     flex-grow:1;
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .accommodation-title {
@@ -355,6 +359,72 @@ h1 {
 
 .popular-cards .card-rating {
     margin-bottom: 5px;
+}
+/*********** Things To Do ************/
+
+.things-to-do-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    align-items: center;
+}
+
+.things-to-do-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 65px;
+}
+
+.things-to-do-cards .card {
+    min-width: 297px;
+    max-width: 297px;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+}
+.things-to-do-cards img {
+    height: 380px;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.things-to-do-cards h3 {
+    padding: 15px;
+}
+
+footer {
+    padding: 40px 0;
+    width: 100%;
+    background-color: var(--main-bg-color);
+}
+
+.footer-container {
+    display: flex;
+    justify-content:left;
+    max-width: 1200px;
+}
+
+.footer-container ul {
+    list-style: none;
+    padding: 0 50px;
+}
+
+.footer-container li {
+    margin-bottom: 10px;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: black;
 }
 /*********** Mobile ************/
 @media (max-width:768px) {
