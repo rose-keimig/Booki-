@@ -28,6 +28,16 @@ h1 {
     margin: 0;
 }
 
+h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+
 .header {
     position: fixed;
     top: 0;
@@ -54,7 +64,6 @@ h1 {
 
 .nav-links {
     display: flex;
-    justify-content: space-between;
     gap: 68px; 
     width: auto;
 }
@@ -106,7 +115,6 @@ h1 {
     background-color: var(--main-color);
     color: white;
     border:none;
-    cursor: pointer;
     min-height:100%;
     flex-shrink: 0;
     width: 93px;
@@ -125,7 +133,6 @@ h1 {
     align-items:center;
     flex-grow: 1;
     min-width: 0;
-    flex-grow:1;
     height:100%;
 }  
 
@@ -149,12 +156,12 @@ h1 {
 .location-icon {
     background-color: var(--main-bg-color);
     height: 100%;
-  }
+}
 
 .fa-location-dot {
     color:#000;
     padding: 15px 18px 16px 18px;
-  }
+}
 
 .filter-container {
     display: flex;
@@ -190,6 +197,7 @@ h1 {
     gap: 10px;
     margin: 0px 0px 35px 0px;
 }
+
 .info i {
     border:2px solid #D9D9D9;
     width: 24px;
@@ -316,6 +324,13 @@ h1 {
 .accommodation-cards .card-rating {
     margin-bottom: 5px;
 }
+
+.show-more {
+    line-height: 1.5;
+    font-size: 18px;
+    font-weight: bold;
+}
+
 /****** Popular ***********/
 .popular {
     width: 32%;
@@ -362,15 +377,18 @@ h1 {
 }
 /*********** Things To Do ************/
 
+.things-to-do {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+}
+
 .things-to-do-cards {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     gap: 30px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    width: 100%;
-    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
 }
 
 .things-to-do-title {
@@ -382,8 +400,8 @@ h1 {
 }
 
 .things-to-do-cards .card {
-    min-width: 297px;
-    max-width: 297px;
+    width: 25%;
+    min-width: 290px;
     margin: 0;
     box-sizing: border-box;
     display: flex;
@@ -402,29 +420,37 @@ h1 {
 }
 
 footer {
-    padding: 40px 0;
     width: 100%;
+    max-width: 1440;
     background-color: var(--main-bg-color);
 }
 
 .footer-container {
     display: flex;
-    justify-content:left;
+    justify-content: space-between;
     max-width: 1200px;
+    margin: 65px 20px 20px 20px;
 }
 
 .footer-container ul {
     list-style: none;
-    padding: 0 50px;
+    padding: 0 50px 0 0;
+    flex: 1;
+    margin: 20 0px;
 }
 
 .footer-container li {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .footer-link {
     text-decoration: none;
     color: black;
+}
+
+.top-footer-link {
+    font-size: 18px;
+    font-weight: bold;
 }
 /*********** Mobile ************/
 @media (max-width:768px) {
