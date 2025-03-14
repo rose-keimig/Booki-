@@ -536,9 +536,10 @@ footer {
     .nav-links {
         display: flex;
         width: 100%;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
         position: relative;
+        gap: 0;
     }
 
     .nav-link::before {
@@ -554,8 +555,16 @@ footer {
         height: 2px;
         background: var(--main-bg-color);
     }
+    
+    .accommodation-nav, 
+    .things-to-do-nav {
+        width: 50%;
+        position: relative;
+        text-align: center;
+    }
 
-    .nav-link::after {
+    .accommodation-nav::after, 
+    .things-to-do-nav::after {
         content: "";
         position: absolute;
         bottom: 0;
@@ -565,9 +574,22 @@ footer {
         background: var(--main-color);
     }
 
-    .nav-link:hover::after {
-        width: 150%;
-        left: -25%;
+    .accommodation-nav::after {
+        left: 0;
+        width: 0%;
+    }
+
+    .accommodation-nav:hover::after {
+        width: 100%;
+    }
+
+    .things-to-do-nav::after {
+        right: 0;
+        width: 0%;
+    }
+
+    .things-to-do-nav:hover::after {
+        width: 100%;
     }
 
     .search-text{
