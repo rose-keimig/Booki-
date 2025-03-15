@@ -142,9 +142,9 @@ h3 {
     min-width: 0;
     border: none;
     outline: none;
-    font-size:18px;
+    font-size: 18px;
     font-weight: bold;
-    color: black;
+    color: #000;
     text-align: center;
   }
 
@@ -155,13 +155,17 @@ h3 {
 }
   
 .location-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--main-bg-color);
     height: 100%;
 }
 
 .fa-location-dot {
     color:#000;
-    padding: 15px 18px 16px 18px;
+    padding: 20px;
+    font-size: 18px;
 }
 
 .filter-container {
@@ -171,7 +175,7 @@ h3 {
 }
 
 .filter-title {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: bold;
 }
 
@@ -185,7 +189,6 @@ h3 {
     color: black;
     border-radius: 25px;
     cursor: pointer;
-    font-size: 17px;
     font-weight: bold;
 }
 
@@ -604,6 +607,11 @@ footer {
         display:none;
     }
 
+    .search-bar {
+        width: auto;
+        height: auto;
+    }
+
     .search-icon {    
     display: block; 
     background-color: var(--main-color);
@@ -611,10 +619,16 @@ footer {
     }
     
     .search-button{
-        width:40px;
-        height: 100%;
-        padding: 0;
+        width:49px;
+        height: 49px;
+        border-radius: 15px;
+        background-color: var(--main-color);
+        color: white;
+        border: none;
+        display: flex;
+        align-items; center;
         justify-content: center;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2)
     }
 
     .filter-container {
@@ -634,6 +648,7 @@ footer {
     .filter-title {
         flex-basis:100%;
         margin: 0px;
+        font-size: 14px;
     }
 
     .accommodation-and-popular section {
@@ -715,6 +730,10 @@ footer {
         padding: 0 0 0 30px;
     }
 
+    .about-container {
+        margin: 14px 0 0 0;
+    }
+
     .footer-container {
         display: flex;
         flex-direction: column;
@@ -722,10 +741,9 @@ footer {
     }
 
     .footer-container ul {
-        padding: 0;
         margin-bottom: 20px;
         text-align: left;
     }
-
-    }
+}
+    
   
