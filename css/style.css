@@ -165,7 +165,7 @@ h3 {
 .fa-location-dot {
     color:#000;
     padding: 20px;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .filter-container {
@@ -513,15 +513,15 @@ footer {
 }
 
 /*********** Mobile ************/
-.main-container {
-    padding: 0;
-}
-
 @media (max-width:768px) {
     header {
         padding: 0 20px;
     }
     
+    .main-container {
+        padding: 0;
+    }
+       
     .navbar {
         position: relative;
         display: flex;
@@ -648,7 +648,6 @@ footer {
     .filter-title {
         flex-basis:100%;
         margin: 0px;
-        font-size: 14px;
     }
 
     .accommodation-and-popular section {
