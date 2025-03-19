@@ -581,15 +581,13 @@ footer {
         background: var(--main-bg-color);
     }
     
-    .accommodation-nav, 
-    .things-to-do-nav {
+    .navbarlinks {
         width: 50%;
         position: relative;
         text-align: center;
     }
 
-    .accommodation-nav::after, 
-    .things-to-do-nav::after {
+    .navbarlinks::after {
         content: "";
         position: absolute;
         bottom: 0;
